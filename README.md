@@ -3,7 +3,7 @@ This was my first proyect made in the Introduction to Web Development course mad
 
 The web site is about the main components of a computer. It has a quiz for those people who wants to prove their knowledge.
 
-You just have to open the index.html file to see the main page.
+Click [here](https://sheldonyoungo.github.io/First-proyect/) to see the web page
 
 I hope you like it!!
 
