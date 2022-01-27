@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="Raspeberry Pi Final Website">
+    <meta name="author" content="Sheldon Youngo">
+    <script src="script.js"></script>
+  </head>
+  
+  <body>
+    <h1 class="heading">The Inside Of A Computer</h1>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__list--item">
+          <a class="navbar__list--item--a" href="#heading">Home</a>
+        </li>
+        <li class="navbar__list--item--dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Parts</a>
+          <div class="dropdown-content">
+            <a class="dropdown-content__item" href="motherboard.html">Motherboard</a>
+            <a class="dropdown-content__item" href="ram.html">RAM Memory</a>
+            <a class="dropdown-content__item" href="cpu.html">CPU</a>
+            <a class="dropdown-content__item" href="peripherials.html">Peripherials</a>
+          </div>
+        </li>
+        <li class="navbar__list--item">
+          <a class="navbar__list--item--a active" href="quiz.html">Quiz</a>
+        </li>
+      </ul>
+    </nav> 
+    
+    <!-- Quiz -->
+    <section id="form">
+      <h2 class="form__h2">It's time to prove your knowledge with a quiz!!!</h2>
+      
+      <p class="form__p">You only have to answer the next questions about the themes you have seen in this page.You have to answer all the questions
+       and when you finish you'll see you score in screen. Make sure you have studied!!</p>
+      
+      <form class="form" name="Quiz">
+        <h3 class="form__h3">First of all, what's your name:</h3>
+        
+        <input type="text" id="fullname" placeholder="Introduce your fullname:" required>
+        
+        <button type="button" id="button" onclick="show_hide()">Submit</button>
+        
+        <div id="question" onsubmit="return false" style="display: none">  
+          <h3 class="question__h3">1.-The heat sink that is attached to the CPU is made of:</h3>
+          
+          <input class="question__input" type="radio" name="q1" value="answer1">Diamond
+          <input class="question__input" type="radio" name="q1" value="answer2">Iron
+          <input class="question__input" type="radio" name="q1" value="answer3">Aluminium
+          <input class="question__input" type="radio" name="q1" value="answer4">Gold
+          
+          <h3 class="question__h3">2.-What component didn't have the computers in the 80's?:</h3>
+          
+          <input class="question__input" type="radio" name="q2" value="answer1">Monitor
+          <input class="question__input" type="radio" name="q2" value="answer2">Floopy Drives
+          <input class="question__input" type="radio" name="q2" value="answer3">Mouse
+          <input class="question__input" type="radio" name="q2" value="answer4">Keyboard
+          
+          <h3 class="question__h3">3.-The RAM memory is volatile because:</h3>
+          
+          <input class="question__input" type="radio" name="q3" value="answer1">It explodes<br>
+          <input class="question__input" type="radio" name="q3" value="answer2">It can store data in mass<br>
+          <input class="question__input" type="radio" name="q3" value="answer3">It quickly loses his content if its power supply is interrupted
+          
+          <h3 class="question__h3">4.-What's the name of the conduits through which data is transmitted on a motherboard:</h3>
+          
+          <input class="question__input" type="radio" name="q4" value="answer1">Conductors
+          <input class="question__input" type="radio" name="q4" value="answer2">Buses
+          <input class="question__input" type="radio" name="q4" value="answer3">Rails
+          <input class="question__input" type="radio" name="q4" value="answer4">Pipelines
+          
+          <br><br><button class="question__button" type="button" onclick="checkAnswers()">Finish</button>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <p>This page was made by <strong>Sheldon Youngo</strong>.2021</p>
+    </footer>
+  </body>
+</html>
